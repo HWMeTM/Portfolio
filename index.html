@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terence Musa Dlamini | Cybersecurity & Cloud Specialist</title>
+    <meta name="description" content="Cybersecurity & Cloud Specialist based in Centurion, South Africa.">
+    
+    <!-- Fonts: Inter for Sans, JetBrains Mono for Code/Meta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // User specified palette
+                        green: '#9bc400',       // Grassy Green
+                        purple: '#8076a3',      // Purple Mountains Majesty
+                        pink: '#f9c5bd',        // Misty Mountain Pink
+                        stone: '#7c677f',       // Factory Stone Purple
+                        
+                        // Functional maps
+                        bgbase: '#FDFBFC',      // Very light, clean background
+                        ink: '#1D1920',         // Deep dark tint for text
+                        borderlight: '#EBE6EA'  // Soft border color matching the aesthetic
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Selection Color */
+        ::selection {
+            background-color: rgba(249, 197, 189, 0.6); /* Misty Mountain Pink */
+            color: #1D1920;
+        }
+        
+        /* Smooth image rendering */
+        img {
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+        /* Hide scrollbar for a cleaner look, but keep functionality for horizontal sliders */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-bgbase text-ink font-sans relative overflow-x-hidden antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-md border-b border-borderlight transition-all">
+        <!-- Inner container matching site width -->
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full border border-ink overflow-hidden bg-pink/20 flex items-center justify-center shadow-sm">
+                    <img 
+                        src="profile.png" 
+                        alt="Terence Portrait" 
+                        class="w-full h-full object-cover grayscale transition-transform hover:scale-110"
+                        onerror="this.style.display='none'"
+                    >
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xs font-bold leading-tight uppercase tracking-tight">Terence Musa Dlamini</span>
+                    <span class="text-[10px] text-stone font-mono leading-tight">Cybersecurity & Cloud Specialist</span>
+                </div>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-8 text-[11px] font-mono tracking-widest uppercase">
+                <a href="#home" class="text-stone hover:text-purple transition-colors">Home</a>
+                <a href="#work" class="text-stone hover:text-purple transition-colors">Work</a>
+                <a href="#lab" class="text-stone hover:text-purple transition-colors">Lab</a>
+                <a href="#writing" class="text-stone hover:text-purple transition-colors">Writing</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="Resume.pdf" target="_blank" class="hidden sm:block px-4 py-2 border border-pink bg-pink/20 text-ink text-[11px] font-mono uppercase tracking-widest hover:bg-pink hover:text-ink transition-all rounded-sm backdrop-blur-sm">
+                    Resume
+                </a>
+                <a href="mailto:terence.musa.dlamini@gmail.com" class="px-4 py-2 border border-ink bg-ink text-white text-[11px] font-mono uppercase tracking-widest hover:bg-transparent hover:text-ink transition-all rounded-sm shadow-sm">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-32">
+        
+        <!-- Hero Section -->
+        <section class="py-20 border-b border-borderlight" id="home">
+            <div class="flex items-center gap-2 text-[10px] font-mono tracking-widest text-stone mb-12 uppercase">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green"></span>
+                </span>
+                Open to new challenges in Cybersecurity & Cloud
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+                <div class="lg:col-span-7">
+                    <h1 class="text-[clamp(3.5rem,8vw,7.5rem)] font-bold leading-[0.85] tracking-tighter mb-8 text-ink">
+                        Secure.<br>
+                        Scale.<br>
+                        <span class="text-purple">Automate.</span>
+                    </h1>
+                    
+                    <div class="mt-8 mb-4">
+                        <h2 class="text-2xl md:text-3xl font-semibold text-ink tracking-tight">Terence Musa Dlamini</h2>
+                    </div>
+                    
+                    <p class="text-lg md:text-xl font-light leading-relaxed text-stone max-w-xl">
+                        Securing digital infrastructure through high-conversion support, cloud operational clarity, and automated threat detection.
+                    </p>
+                </div>
+                
+                <div class="lg:col-span-5 flex flex-col items-start lg:items-end">
+                    <!-- Glassmorphism Image Container -->
+                    <div class="w-full max-w-sm aspect-[4/5] bg-pink/10 backdrop-blur-sm rounded-lg overflow-hidden mb-8 border border-white/40 shadow-[0_8px_32px_0_rgba(124,103,127,0.1)] relative group">
+                        <img 
+                            src="profile.png" 
+                            alt="Terence Musa Dlamini" 
+                            class="w-full h-full object-cover grayscale mix-blend-multiply opacity-90 transition-all group-hover:scale-105 duration-700"
+                            onerror="this.src='https://images.unsplash.com/photo-1507005911827-4c0a6fb73e09?auto=format&fit=crop&q=80&w=800'"
+                        >
+                    </div>
+                    <div class="flex gap-8 sm:gap-12 w-full justify-start lg:justify-end border-t border-borderlight pt-8">
+                        <div>
+                            <div class="text-3xl sm:text-4xl font-bold tracking-tight text-ink">01</div>
+                            <div class="text-[9px] sm:text-[10px] font-mono text-stone tracking-widest mt-1 uppercase">YEAR BUILDING</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl sm:text-4xl font-bold tracking-tight text-ink">50+</div>
+                            <div class="text-[9px] sm:text-[10px] font-mono text-stone tracking-widest mt-1 uppercase">LABS COMPLETED</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl sm:text-4xl font-bold tracking-tight text-ink">08</div>
+                            <div class="text-[9px] sm:text-[10px] font-mono text-stone tracking-widest mt-1 uppercase">CERTS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section class="py-24 border-b border-borderlight" id="work">
+            <div class="flex justify-between items-end mb-16">
+                <div class="space-y-4">
+                    <span class="text-[10px] font-mono tracking-widest text-stone uppercase">01 / WORK / SELECTED PROJECTS</span>
+                    <h2 class="text-4xl sm:text-5xl font-bold tracking-tight max-w-xl text-ink">
+                        Building systems <span class="text-stone font-light">that people actually use.</span>
+                    </h2>
+                </div>
+                <a href="https://github.com/HWMeTM" target="_blank" class="hidden md:flex text-[11px] font-mono uppercase tracking-widest text-purple hover:underline items-center gap-2">
+                    View all work &nearr;
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <a href="https://github.com/HWMeTM/NIST-Software-Vulnerability-Scanner" target="_blank" class="group flex flex-col cursor-pointer block bg-white/40 hover:bg-white/80 p-4 rounded-xl border border-transparent hover:border-pink transition-all duration-300">
+                    <div class="aspect-[4/3] bg-pink/20 mb-6 overflow-hidden rounded-lg relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" 
+                            alt="NIST Scanner" 
+                            class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 mix-blend-multiply"
+                        >
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[9px] font-mono tracking-widest text-ink rounded-sm">2024</div>
+                    </div>
+                    <span class="text-[10px] font-mono text-stone mb-2 uppercase tracking-widest">01 &mdash; PYTHON</span>
+                    <h3 class="text-xl font-bold mb-3 text-ink group-hover:text-purple transition-colors">NIST Vulnerability Scanner</h3>
+                    <p class="text-sm text-stone leading-relaxed mb-6 flex-grow">A Python tool that audits software dependencies against the NIST Database (NVD). Fetches CVE data and maps CVSS severity scores.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-[9px] bg-pink/30 text-ink px-2 py-1 rounded-sm font-mono uppercase tracking-tighter">PYTHON</span>
+                        <span class="text-[9px] bg-pink/30 text-ink px-2 py-1 rounded-sm font-mono uppercase tracking-tighter">SECURITY</span>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://github.com/HWMeTM/File-Dock" target="_blank" class="group flex flex-col cursor-pointer block bg-white/40 hover:bg-white/80 p-4 rounded-xl border border-transparent hover:border-pink transition-all duration-300">
+                    <div class="aspect-[4/3] bg-purple/10 mb-6 overflow-hidden rounded-lg relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800" 
+                            alt="File-Dock" 
+                            class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 mix-blend-multiply"
+                        >
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[9px] font-mono tracking-widest text-ink rounded-sm">2024</div>
+                    </div>
+                    <span class="text-[10px] font-mono text-stone mb-2 uppercase tracking-widest">02 &mdash; JAVASCRIPT</span>
+                    <h3 class="text-xl font-bold mb-3 text-ink group-hover:text-purple transition-colors">File-Dock</h3>
+                    <p class="text-sm text-stone leading-relaxed mb-6 flex-grow">Local-first browser extension for high-speed file conversion and recording. No cloud required—stores everything securely on your device.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-[9px] bg-purple/20 text-ink px-2 py-1 rounded-sm font-mono uppercase tracking-tighter">JS/EXT</span>
+                        <span class="text-[9px] bg-purple/20 text-ink px-2 py-1 rounded-sm font-mono uppercase tracking-tighter">TOOLS</span>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://github.com/HWMeTM/notes-extension" target="_blank" class="group flex flex-col cursor-pointer block bg-white/40 hover:bg-white/80 p-4 rounded-xl border border-transparent hover:border-pink transition-all duration-300">
+                    <div class="aspect-[4/3] bg-stone/10 mb-6 overflow-hidden rounded-lg relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" 
+                            alt="Notes-Extension" 
+                            class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 mix-blend-multiply"
+                        >
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[9px] font-mono tracking-widest text-ink rounded-sm">2023</div>
+                    </div>
+                    <span class="text-[10px] font-mono text-stone mb-2 uppercase tracking-widest">03 &mdash; UI/UX</span>
+                    <h3 class="text-xl font-bold mb-3 text-ink group-hover:text-purple transition-colors">Notes-Extension</h3>
+                    <p class="text-sm text-stone leading-relaxed mb-6 flex-grow">A minimalist, card-based note-taking web extension featuring clean pastel aesthetics and local storage persistence.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-[9px] bg-stone/20 text-ink px-2 py-1 rounded-sm font-mono uppercase tracking-tighter">UI/UX</span>
+                        <span class="text-[9px] bg-stone/20 text-ink px-2 py-1 rounded-sm font-mono uppercase tracking-tighter">LOCAL STORAGE</span>
+                    </div>
+                </a>
+            </div>
+            <a href="https://github.com/HWMeTM" target="_blank" class="mt-8 md:hidden inline-flex text-[11px] font-mono uppercase tracking-widest text-purple hover:underline items-center gap-2">
+                View all work &nearr;
+            </a>
+        </section>
+
+        <!-- Labs Section (Updated) -->
+        <section class="py-24 border-b border-borderlight" id="lab">
+            <div class="flex items-center gap-3 text-[10px] font-mono tracking-widest text-stone mb-8 uppercase">
+                <span>02 / LAB / TECHNICAL LABS</span>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between md:items-baseline mb-16 gap-6">
+                <h2 class="text-4xl sm:text-5xl font-bold tracking-tight max-w-xl text-ink">
+                    Where theory meets <span class="text-stone font-light">execution.</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                
+                <!-- Lab Item -->
+                <div class="group bg-white/40 hover:bg-white/80 backdrop-blur-sm border border-borderlight hover:border-pink p-6 rounded-xl transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-mono text-green uppercase flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-green animate-pulse"></div> ACTIVE
+                        </span>
+                        <span class="text-[9px] font-mono text-stone uppercase tracking-tighter bg-borderlight px-2 py-1 rounded-sm">DEFENSE</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-ink group-hover:text-purple transition-colors mb-2">SOC Level 1 Path</h4>
+                    <p class="text-sm text-stone font-light leading-relaxed">Extensive labs focused on alert triage, deep log analysis, and structured incident response procedures.</p>
+                </div>
+
+                <!-- Lab Item -->
+                <div class="group bg-white/40 hover:bg-white/80 backdrop-blur-sm border border-borderlight hover:border-pink p-6 rounded-xl transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-mono text-purple uppercase flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-purple"></div> RECENT
+                        </span>
+                        <span class="text-[9px] font-mono text-stone uppercase tracking-tighter bg-borderlight px-2 py-1 rounded-sm">ANALYSIS</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-ink group-hover:text-purple transition-colors mb-2">Phishing Analysis Lab</h4>
+                    <p class="text-sm text-stone font-light leading-relaxed">Detecting malicious emails, analyzing headers, and extracting actionable Indicators of Compromise (IOCs).</p>
+                </div>
+
+                <!-- Lab Item -->
+                <div class="group bg-white/40 hover:bg-white/80 backdrop-blur-sm border border-borderlight hover:border-pink p-6 rounded-xl transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-mono text-stone uppercase flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-stone"></div> DONE
+                        </span>
+                        <span class="text-[9px] font-mono text-stone uppercase tracking-tighter bg-borderlight px-2 py-1 rounded-sm">OFFENSIVE</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-ink group-hover:text-purple transition-colors mb-2">Active Directory Exploitation</h4>
+                    <p class="text-sm text-stone font-light leading-relaxed">Hands-on experience with AD privilege escalation, ticket granting, and tracking lateral movement.</p>
+                </div>
+
+                <!-- Lab Item -->
+                <div class="group bg-white/40 hover:bg-white/80 backdrop-blur-sm border border-borderlight hover:border-pink p-6 rounded-xl transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-mono text-stone uppercase flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-stone"></div> DONE
+                        </span>
+                        <span class="text-[9px] font-mono text-stone uppercase tracking-tighter bg-borderlight px-2 py-1 rounded-sm">NETWORKING</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-ink group-hover:text-purple transition-colors mb-2">LAN/WAN Configuration</h4>
+                    <p class="text-sm text-stone font-light leading-relaxed">Setting up robust network topologies including routers, switches, VLAN segmentation, and DHCP.</p>
+                </div>
+
+                <!-- Lab Item -->
+                <div class="group bg-white/40 hover:bg-white/80 backdrop-blur-sm border border-borderlight hover:border-pink p-6 rounded-xl transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-mono text-stone uppercase flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-stone"></div> DONE
+                        </span>
+                        <span class="text-[9px] font-mono text-stone uppercase tracking-tighter bg-borderlight px-2 py-1 rounded-sm">WIRELESS</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-ink group-hover:text-purple transition-colors mb-2">Wireless Networking</h4>
+                    <p class="text-sm text-stone font-light leading-relaxed">Configuring secure SSIDs, implementing WPA2/Enterprise security, and optimizing access points.</p>
+                </div>
+
+                <!-- Lab Item -->
+                <div class="group bg-white/40 hover:bg-white/80 backdrop-blur-sm border border-borderlight hover:border-pink p-6 rounded-xl transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[9px] font-mono text-stone uppercase flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-stone"></div> DONE
+                        </span>
+                        <span class="text-[9px] font-mono text-stone uppercase tracking-tighter bg-borderlight px-2 py-1 rounded-sm">SUPPORT</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-ink group-hover:text-purple transition-colors mb-2">Troubleshooting Labs</h4>
+                    <p class="text-sm text-stone font-light leading-relaxed">Diagnosing deep connectivity issues across multiple devices, OS environments, and VPN clients.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Writing / LinkedIn Posts Section (New) -->
+        <section class="py-24 border-b border-borderlight" id="writing">
+            <div class="flex justify-between items-end mb-12">
+                <div class="space-y-4">
+                    <span class="text-[10px] font-mono tracking-widest text-stone uppercase">03 / WRITING / INSIGHTS</span>
+                    <h2 class="text-4xl sm:text-5xl font-bold tracking-tight max-w-xl text-ink">
+                        Thoughts & <span class="text-stone font-light">Updates.</span>
+                    </h2>
+                </div>
+                <a href="https://linkedin.com/in/terencedlamini" target="_blank" class="hidden md:flex text-[11px] font-mono uppercase tracking-widest text-purple hover:underline items-center gap-2">
+                    Connect on LinkedIn &nearr;
+                </a>
+            </div>
+
+            <!-- Horizontal Slider Feed -->
+            <div class="flex gap-6 overflow-x-auto pb-8 snap-x hide-scrollbar" style="-webkit-overflow-scrolling: touch;">
+                
+                <!-- Post Card 1 -->
+                <a href="https://linkedin.com/in/terencedlamini" target="_blank" class="min-w-[300px] md:min-w-[400px] flex-shrink-0 bg-white/60 backdrop-blur-sm border border-borderlight p-8 rounded-2xl snap-start hover:border-purple hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <img src="https://r.jina.ai/i/9707e596700c436b957e84451737e69c" alt="Profile" class="w-10 h-10 rounded-full border border-borderlight grayscale">
+                            <div>
+                                <h4 class="text-sm font-semibold text-ink">Terence Musa Dlamini</h4>
+                                <p class="text-[10px] font-mono text-stone">Recently</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-ink group-hover:text-purple transition-colors">The Importance of Log Analysis in SOC</h3>
+                        <p class="text-sm text-stone font-light leading-relaxed line-clamp-4">
+                            In my recent TryHackMe labs, I've been diving deep into SIEM environments. It's fascinating how a single anomalous log entry, buried among millions, can trace back to an active persistence attempt. Proper log hygiene isn't just compliance—it's active defense.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-borderlight flex items-center justify-between">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-stone bg-borderlight px-2 py-1 rounded">Cybersecurity</span>
+                        <span class="text-[11px] font-medium text-purple flex items-center gap-1 group-hover:underline">Read Post &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post Card 2 -->
+                <a href="https://linkedin.com/in/terencedlamini" target="_blank" class="min-w-[300px] md:min-w-[400px] flex-shrink-0 bg-white/60 backdrop-blur-sm border border-borderlight p-8 rounded-2xl snap-start hover:border-purple hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <img src="https://r.jina.ai/i/9707e596700c436b957e84451737e69c" alt="Profile" class="w-10 h-10 rounded-full border border-borderlight grayscale">
+                            <div>
+                                <h4 class="text-sm font-semibold text-ink">Terence Musa Dlamini</h4>
+                                <p class="text-[10px] font-mono text-stone">A few weeks ago</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-ink group-hover:text-purple transition-colors">Achieving Oracle OCI Architect Status</h3>
+                        <p class="text-sm text-stone font-light leading-relaxed line-clamp-4">
+                            Thrilled to announce that I've officially earned my Oracle Cloud Infrastructure 2025 Architect Associate certification! Building resilient Virtual Cloud Networks and managing IAM policies is crucial for scaling modern infrastructure securely.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-borderlight flex items-center justify-between">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-stone bg-borderlight px-2 py-1 rounded">Cloud & Infra</span>
+                        <span class="text-[11px] font-medium text-purple flex items-center gap-1 group-hover:underline">Read Post &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post Card 3 -->
+                <a href="https://linkedin.com/in/terencedlamini" target="_blank" class="min-w-[300px] md:min-w-[400px] flex-shrink-0 bg-white/60 backdrop-blur-sm border border-borderlight p-8 rounded-2xl snap-start hover:border-purple hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <img src="https://r.jina.ai/i/9707e596700c436b957e84451737e69c" alt="Profile" class="w-10 h-10 rounded-full border border-borderlight grayscale">
+                            <div>
+                                <h4 class="text-sm font-semibold text-ink">Terence Musa Dlamini</h4>
+                                <p class="text-[10px] font-mono text-stone">Last month</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-ink group-hover:text-purple transition-colors">Automating Vulnerability Scans</h3>
+                        <p class="text-sm text-stone font-light leading-relaxed line-clamp-4">
+                            Just pushed an update to my NIST Vulnerability Scanner on GitHub. Automating the mapping of CVEs to CVSS scores using Python has drastically reduced the time needed to audit software dependencies. Automation is the future of IT Support.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-borderlight flex items-center justify-between">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-stone bg-borderlight px-2 py-1 rounded">Automation</span>
+                        <span class="text-[11px] font-medium text-purple flex items-center gap-1 group-hover:underline">Read Post &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-32" id="contact">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-[clamp(3rem,6vw,6rem)] font-bold tracking-tighter leading-[0.9] mb-12 text-ink">
+                        Got an<br>
+                        <span class="text-purple">interesting</span><br>
+                        problem?<br>
+                        Let's talk.
+                    </h2>
+                </div>
+                <div class="flex flex-col justify-end lg:pb-8">
+                    <p class="text-lg text-stone font-light max-w-sm mb-12 leading-relaxed">
+                        I am always open to conversations about product, security, and technology&mdash;especially the kind that don't have an obvious answer yet. I read every message.
+                    </p>
+                    <a href="mailto:terence.musa.dlamini@gmail.com" class="text-2xl sm:text-3xl font-bold border-b-2 border-ink pb-2 hover:text-purple hover:border-purple transition-all w-fit break-all text-ink">
+                        terence.musa.dlamini@gmail.com &nearr;
+                    </a>
+                    <div class="flex flex-wrap gap-8 mt-12 text-[11px] font-mono uppercase tracking-[0.2em] text-stone">
+                        <a href="https://linkedin.com/in/terencedlamini" target="_blank" class="hover:text-purple transition-colors">LinkedIn &nearr;</a>
+                        <a href="https://github.com/HWMeTM" target="_blank" class="hover:text-purple transition-colors">GitHub &nearr;</a>
+                        <a href="Resume.pdf" target="_blank" class="px-3 py-1 bg-pink/20 border border-pink text-ink rounded-sm hover:bg-pink transition-colors">Resume &nearr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 border-t border-borderlight flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div class="space-y-1">
+                <p class="text-[10px] font-mono text-stone uppercase">&copy; <span id="year">2026</span> Terence Musa Dlamini</p>
+                <p class="text-[10px] font-mono text-stone uppercase tracking-widest">Built in Centurion. Security, Cloud, Code.</p>
+            </div>
+            <div class="flex flex-wrap gap-12 text-[10px] font-mono text-stone uppercase tracking-widest">
+                <div class="flex flex-col gap-2">
+                    <span class="text-ink font-bold">WORK</span>
+                    <a href="https://github.com/HWMeTM/NIST-Software-Vulnerability-Scanner" target="_blank" class="hover:text-purple transition-colors">NIST Scanner</a>
+                    <a href="https://github.com/HWMeTM/File-Dock" target="_blank" class="hover:text-purple transition-colors">File Dock</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-ink font-bold">CONTACT</span>
+                    <a href="mailto:terence.musa.dlamini@gmail.com" class="hover:text-purple transition-colors">Email</a>
+                    <a href="https://linkedin.com/in/terencedlamini" target="_blank" class="hover:text-purple transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Global Subtle Texture Overlay -->
+    <div class="fixed inset-0 pointer-events-none opacity-[0.4] mix-blend-overlay z-[9999]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
